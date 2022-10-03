@@ -36,15 +36,15 @@
    ```bash
    truncate -s 1840847 (filename.webm)
    ```
-5.Rename your file to **deck_startup.webm** note: we want this to replace the original deck_startup.webm
-6.Navigate to .local/share/Steam/steamui/css and open library.css, scroll to the bottom, find the line that contains “video{flex-grow:0....” and change it to
+5. Rename your file to **deck_startup.webm** note: we want this to replace the original deck_startup.webm
+6. Navigate to .local/share/Steam/steamui/css and open library.css, scroll to the bottom, find the line that contains “video{flex-grow:0....” and change it to
 the following:
 ```css
 video{flex-grow:1;width:100%;height:100%;z-index:10}
 ```
-7.Save changes.
+7. Save changes.
 
-8.Open a terminal within /home/deck/.local/share/Steam/steamui/css and run the following
+8. Open a terminal within /home/deck/.local/share/Steam/steamui/css and run the following
 command:
 ```bash
 truncate -s 38492 library.css
